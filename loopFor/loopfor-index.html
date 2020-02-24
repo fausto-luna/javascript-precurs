@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+
+<p id="demo"></p>
+<h1></h1>
+        <h2>Indica el número de palabras a registrar:</h2> 
+        <input type="text" id="numPalabras"/>
+        <input type="button" onClick="operacion()" value="aceptar"/>
+        <p id="demo"></p>
+<script>
+    function operacion(){
+                let palabras = new Array();
+                var palabra ;
+                var numPalabras = parseInt(document.getElementById("numPalabras").value);
+                for (let i = 0; i < numPalabras; i++){
+                    palabra = prompt("introduce la palabra");
+                    palabras.push(palabra);
+                }
+            document.getElementById("demo").innerHTML = palabras;
+           }
+
+// var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// var text = "";
+// var i;
+// for (i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+// document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

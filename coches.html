@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="edad">Sistema escolar español</p>
+  <script>
+
+    let edad = parseInt (prompt("introduce tu edad"))
+
+    if (edad >= 18) {
+      document.getElementById("edad").innerHTML = "tienes que ir a FP o Universidad";
+    }
+    else if (edad >=16) {
+      document.getElementById("edad").innerHTML = "tienes que hacer bachillerato";
+    }
+    else if (edad >= 12) {
+      document.getElementById("edad").innerHTML = "tienes que hacer ESO";
+    }
+    else if (edad >= 6) {
+      document.getElementById("edad").innerHTML = "tienes que hacer primaria";
+    }
+    else if (edad <=5) {
+      document.getElementById("edad").innerHTML = "tienes que hacer pre-escolar";
+    }
+
+
+
+
+  </script>
+
+</body>
+</html>
